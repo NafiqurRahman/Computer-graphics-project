@@ -4,6 +4,7 @@
 #include<windows.h>//nafi...
 
 unsigned char viewMode = 'd';
+// adol
 
 //Background skyColor
 GLclampf skyColorRed = 0.133;
