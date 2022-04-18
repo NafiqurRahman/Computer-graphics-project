@@ -369,6 +369,705 @@ void myDisplay(void)
 
 //clouds here
     danimateCloud();
+glPushMatrix();
+
+    glPushMatrix();
+    glTranslatef(310+peopleNtext, 33, 0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(225, 227, 104);
+
+
+    for(int i=0; i<200; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/200;
+        float r=4;
+        float x = r * cos(A);
+        float y = r * sin(A)*3;
+        glVertex2f(x,y );
+    }
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3ub(209, 30, 17);
+    glVertex2i (-1, -10);
+    glVertex2i (-2, -16);
+    glVertex2i (2, -16);
+    glVertex2i (1, -10);
+
+
+//dress
+
+    glColor3f(1.0, 0.0, 1.0);
+    glVertex2i (-6, -16);
+    glVertex2i (-8, -22);
+    glVertex2i (8, -22);
+    glVertex2i (6, -16);
+
+    glVertex2i (-4, -22);
+    glVertex2i (-5, -32);
+    glVertex2i (5, -32);
+    glVertex2i (4, -22);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (-3, -33);
+    glVertex2i (-3, -80);
+    glVertex2i (-1, -80);
+    glVertex2i (-1, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-1, -80);
+    glVertex2i (-2, -83);
+    glVertex2i (-4, -83);
+    glVertex2i (-3, -80);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (1, -33);
+    glVertex2i (1, -80);
+    glVertex2i (3, -80);
+    glVertex2i (3, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (1, -80);
+    glVertex2i (2, -83);
+    glVertex2i (4, -83);
+    glVertex2i (3, -80);
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.7, 0.0);
+    glVertex2i (-4, 7);
+    glVertex2i (-4, 0);
+    glVertex2i (4, 0);
+    glVertex2i (4, 7);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-2, 13);
+    glVertex2i (-4, 7);
+    glVertex2i (4, 7);
+    glVertex2i (2, 13);
+
+
+//ear
+
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-4, 0);
+    glVertex2i (-4, -5);
+    glVertex2i (-3, -5);
+    glVertex2i (-3, 0);
+
+    glVertex2i (4, 0);
+    glVertex2i (4, -5);
+    glVertex2i (3, -5);
+    glVertex2i (3, 0);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+
+    for(int i=0; i<50; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/50;
+        float r=1.2;
+        float x = r * cos(A);
+        float y = r * sin(A)*2;
+        glVertex2f(x,y+3 );
+    }
+    glEnd();
+
+
+    glPopMatrix();
+
+
+// Figure 2
+    glPushMatrix();
+    glTranslatef(330+peopleNtext, 33, 0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(225, 227, 104);
+
+
+    for(int i=0; i<200; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/200;
+        float r=4;
+        float x = r * cos(A);
+        float y = r * sin(A)*3;
+        glVertex2f(x,y );
+    }
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3ub(209, 30, 17);
+    glVertex2i (-1, -10);
+    glVertex2i (-2, -16);
+    glVertex2i (2, -16);
+    glVertex2i (1, -10);
+
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex2i (-6, -16);
+    glVertex2i (-8, -22);
+    glVertex2i (8, -22);
+    glVertex2i (6, -16);
+
+    glVertex2i (-4, -22);
+    glVertex2i (-5, -32);
+    glVertex2i (5, -32);
+    glVertex2i (4, -22);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (-3, -33);
+    glVertex2i (-3, -80);
+    glVertex2i (-1, -80);
+    glVertex2i (-1, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-1, -80);
+    glVertex2i (-2, -83);
+    glVertex2i (-4, -83);
+    glVertex2i (-3, -80);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (1, -33);
+    glVertex2i (1, -80);
+    glVertex2i (3, -80);
+    glVertex2i (3, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (1, -80);
+    glVertex2i (2, -83);
+    glVertex2i (4, -83);
+    glVertex2i (3, -80);
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.7, 0.0);
+    glVertex2i (-4, 7);
+    glVertex2i (-4, 0);
+    glVertex2i (4, 0);
+    glVertex2i (4, 7);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-2, 13);
+    glVertex2i (-4, 7);
+    glVertex2i (4, 7);
+    glVertex2i (2, 13);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-4, 0);
+    glVertex2i (-4, -5);
+    glVertex2i (-3, -5);
+    glVertex2i (-3, 0);
+
+    glVertex2i (4, 0);
+    glVertex2i (4, -5);
+    glVertex2i (3, -5);
+    glVertex2i (3, 0);
+
+    glEnd();
+
+
+
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+
+
+    for(int i=0; i<50; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/50;
+        float r=1.2;
+        float x = r * cos(A);
+        float y = r * sin(A)*2;
+        glVertex2f(x,y+3 );
+    }
+    glEnd();
+
+    glPopMatrix();
+
+
+// Figure 3
+    glPushMatrix();
+    glTranslatef(350+peopleNtext, 33, 0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(225, 227, 104);
+
+
+    for(int i=0; i<200; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/200;
+        float r=4;
+        float x = r * cos(A);
+        float y = r * sin(A)*3;
+        glVertex2f(x,y);
+    }
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3ub(209, 30, 17);
+    glVertex2i (-1, -10);
+    glVertex2i (-2, -16);
+    glVertex2i (2, -16);
+    glVertex2i (1, -10);
+
+    glColor3f(1.0, 0.1, 0.0);
+    glVertex2i (-6, -16);
+    glVertex2i (-8, -22);
+    glVertex2i (8, -22);
+    glVertex2i (6, -16);
+
+    glVertex2i (-4, -22);
+    glVertex2i (-5, -32);
+    glVertex2i (5, -32);
+    glVertex2i (4, -22);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (-3, -33);
+    glVertex2i (-3, -80);
+    glVertex2i (-1, -80);
+    glVertex2i (-1, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-1, -80);
+    glVertex2i (-2, -83);
+    glVertex2i (-4, -83);
+    glVertex2i (-3, -80);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (1, -33);
+    glVertex2i (1, -80);
+    glVertex2i (3, -80);
+    glVertex2i (3, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (1, -80);
+    glVertex2i (2, -83);
+    glVertex2i (4, -83);
+    glVertex2i (3, -80);
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.7, 0.0);
+    glVertex2i (-4, 7);
+    glVertex2i (-4, 0);
+    glVertex2i (4, 0);
+    glVertex2i (4, 7);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-2, 13);
+    glVertex2i (-4, 7);
+    glVertex2i (4, 7);
+    glVertex2i (2, 13);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-4, 0);
+    glVertex2i (-4, -5);
+    glVertex2i (-3, -5);
+    glVertex2i (-3, 0);
+
+    glVertex2i (4, 0);
+    glVertex2i (4, -5);
+    glVertex2i (3, -5);
+    glVertex2i (3, 0);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+
+
+    for(int i=0; i<50; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/50;
+        float r=1.2;
+        float x = r * cos(A);
+        float y = r * sin(A)*2;
+        glVertex2f(x,y+3 );
+    }
+    glEnd();
+
+    glPopMatrix();
+
+
+
+
+// Figure 4
+
+    glPushMatrix();
+    glTranslatef(370+peopleNtext, 33, 0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(225, 227, 104);
+
+
+    for(int i=0; i<200; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/200;
+        float r=4;
+        float x = r * cos(A);
+        float y = r * sin(A)*3;
+        glVertex2f(x,y );
+    }
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3ub(209, 30, 17);
+    glVertex2i (-1, -10);
+    glVertex2i (-2, -16);
+    glVertex2i (2, -16);
+    glVertex2i (1, -10);
+
+    glColor3f(1.1, 1.1, 1.1);
+    glVertex2i (-6, -16);
+    glVertex2i (-8, -22);
+    glVertex2i (8, -22);
+    glVertex2i (6, -16);
+
+    glVertex2i (-4, -22);
+    glVertex2i (-5, -32);
+    glVertex2i (5, -32);
+    glVertex2i (4, -22);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (-3, -33);
+    glVertex2i (-3, -80);
+    glVertex2i (-1, -80);
+    glVertex2i (-1, -33);
+
+    glColor3f(1.0, 1.0, 1.0);
+    glVertex2i (-1, -80);
+    glVertex2i (-2, -83);
+    glVertex2i (-4, -83);
+    glVertex2i (-3, -80);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (1, -33);
+    glVertex2i (1, -80);
+    glVertex2i (3, -80);
+    glVertex2i (3, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (1, -80);
+    glVertex2i (2, -83);
+    glVertex2i (4, -83);
+    glVertex2i (3, -80);
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.7, 0.0);
+    glVertex2i (-4, 7);
+    glVertex2i (-4, 0);
+    glVertex2i (4, 0);
+    glVertex2i (4, 7);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-2, 13);
+    glVertex2i (-4, 7);
+    glVertex2i (4, 7);
+    glVertex2i (2, 13);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-4, 0);
+    glVertex2i (-4, -5);
+    glVertex2i (-3, -5);
+    glVertex2i (-3, 0);
+
+    glVertex2i (4, 0);
+    glVertex2i (4, -5);
+    glVertex2i (3, -5);
+    glVertex2i (3, 0);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+
+
+    for(int i=0; i<50; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/50;
+        float r=1.2;
+        float x = r * cos(A);
+        float y = r * sin(A)*2;
+        glVertex2f(x,y+3 );
+    }
+    glEnd();
+
+    glPopMatrix();
+
+
+// Figure 5
+
+    glPushMatrix();
+    glTranslatef(290+peopleNtext, 33, 0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(225, 227, 104);
+
+
+    for(int i=0; i<200; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/200;
+        float r=4;
+        float x = r * cos(A);
+        float y = r * sin(A)*3;
+        glVertex2f(x,y );
+    }
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3ub(209, 30, 17);
+    glVertex2i (-1, -10);
+    glVertex2i (-2, -16);
+    glVertex2i (2, -16);
+    glVertex2i (1, -10);
+
+    glColor3f(1.0, 1.0, 0.0);
+    glVertex2i (-6, -16);
+    glVertex2i (-8, -22);
+    glVertex2i (8, -22);
+    glVertex2i (6, -16);
+
+    glVertex2i (-4, -22);
+    glVertex2i (-5, -32);
+    glVertex2i (5, -32);
+    glVertex2i (4, -22);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (-3, -33);
+    glVertex2i (-3, -80);
+    glVertex2i (-1, -80);
+    glVertex2i (-1, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-1, -80);
+    glVertex2i (-2, -83);
+    glVertex2i (-4, -83);
+    glVertex2i (-3, -80);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (1, -33);
+    glVertex2i (1, -80);
+    glVertex2i (3, -80);
+    glVertex2i (3, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (1, -80);
+    glVertex2i (2, -83);
+    glVertex2i (4, -83);
+    glVertex2i (3, -80);
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.7, 0.0);
+    glVertex2i (-4, 7);
+    glVertex2i (-4, 0);
+    glVertex2i (4, 0);
+    glVertex2i (4, 7);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-2, 13);
+    glVertex2i (-4, 7);
+    glVertex2i (4, 7);
+    glVertex2i (2, 13);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-4, 0);
+    glVertex2i (-4, -5);
+    glVertex2i (-3, -5);
+    glVertex2i (-3, 0);
+
+    glVertex2i (4, 0);
+    glVertex2i (4, -5);
+    glVertex2i (3, -5);
+    glVertex2i (3, 0);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+
+
+    for(int i=0; i<50; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/50;
+        float r=1.2;
+        float x = r * cos(A);
+        float y = r * sin(A)*2;
+        glVertex2f(x,y+3 );
+    }
+    glEnd();
+
+    glPopMatrix();
+
+
+// Figure 6
+
+    glPushMatrix();
+    glTranslatef(270+peopleNtext, 33, 0);
+
+    glBegin(GL_POLYGON);
+    glColor3ub(225, 227, 104);
+
+
+    for(int i=0; i<200; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/200;
+        float r=4;
+        float x = r * cos(A);
+        float y = r * sin(A)*3;
+        glVertex2f(x,y );
+    }
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3ub(209, 30, 17);
+    glVertex2i (-1, -10);
+    glVertex2i (-2, -16);
+    glVertex2i (2, -16);
+    glVertex2i (1, -10);
+
+    glColor3f(0.0, 0.0, 1.0);
+    glVertex2i (-6, -16);
+    glVertex2i (-8, -22);
+    glVertex2i (8, -22);
+    glVertex2i (6, -16);
+
+    glVertex2i (-4, -22);
+    glVertex2i (-5, -32);
+    glVertex2i (5, -32);
+    glVertex2i (4, -22);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (-3, -33);
+    glVertex2i (-3, -80);
+    glVertex2i (-1, -80);
+    glVertex2i (-1, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-1, -80);
+    glVertex2i (-2, -83);
+    glVertex2i (-4, -83);
+    glVertex2i (-3, -80);
+
+    glColor3ub(23, 18, 3);
+    glVertex2i (1, -33);
+    glVertex2i (1, -80);
+    glVertex2i (3, -80);
+    glVertex2i (3, -33);
+
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (1, -80);
+    glVertex2i (2, -83);
+    glVertex2i (4, -83);
+    glVertex2i (3, -80);
+    glEnd();
+
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.7, 0.0);
+    glVertex2i (-4, 7);
+    glVertex2i (-4, 0);
+    glVertex2i (4, 0);
+    glVertex2i (4, 7);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-2, 13);
+    glVertex2i (-4, 7);
+    glVertex2i (4, 7);
+    glVertex2i (2, 13);
+
+    glBegin(GL_QUADS);
+    glColor3f(0.0, 0.0, 0.0);
+    glVertex2i (-4, 0);
+    glVertex2i (-4, -5);
+    glVertex2i (-3, -5);
+    glVertex2i (-3, 0);
+
+    glVertex2i (4, 0);
+    glVertex2i (4, -5);
+    glVertex2i (3, -5);
+    glVertex2i (3, 0);
+
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    glColor3f(1.0, 0.0, 0.0);
+
+
+    for(int i=0; i<50; i++)
+    {
+        float pi=3.1416;
+        float A=(i*2*pi)/50;
+        float r=1.2;
+        float x = r * cos(A);
+        float y = r * sin(A)*2;
+        glVertex2f(x,y+3 );
+    }
+    glEnd();
+
+    glPopMatrix();
+
+
+// Text
+    glColor3ub(222, 13, 0);
+    glBegin(GL_QUADS);
+    glVertex2i(260+peopleNtext, -40);
+    glVertex2i(260+peopleNtext, 10);
+    glVertex2i(380+peopleNtext, 10);
+    glVertex2i(380+peopleNtext, -40);
+    glEnd();
+
+
+    glPushMatrix();
+    glTranslatef(30+peopleNtext, 180, 0);
+    Sprint(240,-190,text);
+    Sprint(240,-210,text2);
+    glPopMatrix();
+
+ if(viewMode=='t' || viewMode == 'n')
+    {
+        if(peopleNtext<=200)
+        {
+            peopleNtext+=1;
+        }
+    }
+    glFlush();
 
     glPopMatrix();
     glFlush();
