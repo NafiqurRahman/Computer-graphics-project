@@ -1,6 +1,6 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
-#include <math.h>
+#include <math.h>//propa.............
 #include<windows.h>//nafi...
 
 unsigned char viewMode = 'd';
