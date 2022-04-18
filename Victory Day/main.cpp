@@ -384,7 +384,7 @@ void myDisplay(void)
 
 
 
-
+//ground 1
      glColor3f(0.7, 0.3, 0.2) ;
     glBegin(GL_QUADS);
     glVertex2i (0, 30);
