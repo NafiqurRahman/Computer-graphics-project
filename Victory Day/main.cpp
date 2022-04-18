@@ -1,6 +1,6 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
-#include <math.h>
+#include <math.h>//propa.............
 #include<windows.h>//nafi...
 
 unsigned char viewMode = 'd';
@@ -368,6 +368,22 @@ void myDisplay(void)
 
 //clouds here
     danimateCloud();
+        glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(40, 30);
+    glVertex2i (180, 62);
+
+    glVertex2i (180, 62);
+    glVertex2i (320, 30);
+
+    glVertex2i (320, 30);
+    glVertex2i (40, 30);
+
+    glEnd();
+
+
+
 
      glColor3f(0.7, 0.3, 0.2) ;
     glBegin(GL_QUADS);
@@ -1020,23 +1036,20 @@ void myDisplay(void)
         float y = r * sin(A)*1.5;
         glVertex2f(x,y );
     }
-    glEnd();
-
+  glEnd();
 
 
     glPopMatrix();
     glPopMatrix();
-
-
-
-    glPushMatrix();
+  glPushMatrix();
     glTranslatef(40, 150, 0);
 
 
 
     glPushMatrix();
     glBegin(GL_POLYGON);
-    glColor3ub(12, 120, 41);
+  
+  glColor3ub(12, 120, 41);
 
 
     for(int i=0; i<200; i++)
@@ -1053,10 +1066,12 @@ void myDisplay(void)
 
     glPopMatrix();
     glPopMatrix();
-
-
-    glColor3ub(120, 32, 12);
-    glBegin(GL_QUADS);
+  
+  
+  
+  
+glColor3ub(120, 32, 12);
+ glBegin(GL_QUADS);
     glVertex2i(48, 130);
     glVertex2i(47, 40);
     glVertex2i(52, 40);
@@ -1159,9 +1174,349 @@ void myDisplay(void)
 
 
     glPopMatrix();
+//trin 1
+  
+    glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_POLYGON);
 
-    glPopMatrix();
-    glFlush();
+    glVertex2i(40, 30);
+    glVertex2i (180, 62);
+
+    glVertex2i (180, 62);
+    glVertex2i (320, 30);
+
+    glVertex2i (320, 30);
+    glVertex2i (40, 30);
+
+    glEnd();
+
+  
+
+//trin 1 main
+    glColor3f(0.6, 0.6, 0.6) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(43, 30);
+    glVertex2i (317, 30);
+
+    glVertex2i (317, 30);
+    glVertex2i (180, 60);
+
+    glVertex2i (180, 60);
+    glVertex2i (43, 30);
+
+    glEnd();
+
+
+
+//trn2
+    glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(60, 30);
+    glVertex2i (180, 102);
+
+    glVertex2i (180, 102);
+    glVertex2i (300, 30);
+
+    glVertex2i (300, 30);
+    glVertex2i (60, 30);
+    glEnd();
+
+
+//trn2 main
+    glColor3f(0.4, 0.4, 0.4) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(62, 30);
+    glVertex2i (180, 100);
+
+    glVertex2i (180, 100);
+    glVertex2i (298, 30);
+
+    glVertex2i (298, 30);
+    glVertex2i (62, 30);
+
+    glEnd();
+
+
+//trn3
+    glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(80, 30);
+    glVertex2i (180, 152);
+
+    glVertex2i (180, 152);
+    glVertex2i (280, 30);
+
+    glVertex2i (280, 30);
+    glVertex2i (80, 30);
+
+    glEnd();
+
+
+
+//trn3 main
+    glColor3f(0.4, 0.4, 0.4) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(81, 30);
+    glVertex2i (180, 150);
+
+    glVertex2i (180, 150);
+    glVertex2i (279, 30);
+
+    glVertex2i (279, 30);
+    glVertex2i (81, 30);
+
+    glEnd();
+
+
+
+//trn 4
+    glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(100, 30);
+    glVertex2i (180, 202);
+
+    glVertex2i (180, 202);
+    glVertex2i (260, 30);
+
+    glVertex2i (260, 30);
+    glVertex2i (100, 30);
+
+    glEnd();
+
+
+
+//trn4 main
+    glColor3f(0.4, 0.4, 0.4) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(101, 30);
+    glVertex2i (180, 200);
+
+    glVertex2i (180, 200);
+    glVertex2i (259, 30);
+
+    glVertex2i (259, 30);
+    glVertex2i (101, 30);
+
+    glEnd();
+
+
+
+//trn 5
+
+    glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(120, 30);
+    glVertex2i (180, 252);
+
+    glVertex2i (180, 252);
+    glVertex2i (240, 30);
+
+    glVertex2i (240, 30);
+    glVertex2i (120, 30);
+
+    glEnd();
+
+
+
+//trn5 main
+    glColor3f(0.4, 0.4, 0.4) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(121, 30);
+    glVertex2i (180, 250);
+
+    glVertex2i (180, 250);
+    glVertex2i (239, 30);
+
+    glVertex2i (239, 30);
+    glVertex2i (121, 30);
+
+    glEnd();
+
+
+
+//trn 6
+    glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(140, 30);
+    glVertex2i (180, 302);
+  glVertex2i (180, 302);
+    glVertex2i (220, 30);
+
+    glVertex2i (220, 30);
+    glVertex2i (140, 30);
+
+    glEnd();
+
+//trn6 main
+    glColor3f(0.4, 0.4, 0.4) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(141, 30);
+    glVertex2i (180, 300);
+
+    glVertex2i (180, 300);
+    glVertex2i (219, 30);
+
+    glVertex2i (219, 30);
+    glVertex2i (141, 30);
+
+    glEnd();
+
+
+
+//trn 7
+    glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(160, 30);
+    glVertex2i (180, 351);
+
+    glVertex2i (180, 351);
+    glVertex2i (200, 30);
+
+    glVertex2i (200, 30);
+    glVertex2i (160, 30);
+
+    glEnd();
+
+
+
+
+//trn7 main
+    glColor3f(0.4, 0.4, 0.4) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(161, 30);
+    glVertex2i (180, 350);
+
+    glVertex2i (180, 350);
+    glVertex2i (199, 30);
+
+    glVertex2i (199, 30);
+    glVertex2i (161, 30);
+
+    glEnd();
+
+
+
+
+//middle line.
+    glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(167, 145);
+    glVertex2i (167, 148);
+
+    glVertex2i (167, 148);
+    glVertex2i (193, 148);
+
+    glVertex2i (193, 148);
+    glVertex2i (193, 145);
+
+    glVertex2i (193, 145);
+    glVertex2i (167, 145);
+
+    glEnd();
+
+
+
+
+//under train main
+    glColor3f(0.3, 0.3, 0.3) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(168, 145);
+    glVertex2i (180, 91);
+
+    glVertex2i (180, 91);
+    glVertex2i (192, 145);
+
+    glVertex2i (192, 145);
+    glVertex2i(168, 145);
+
+
+    glEnd();
+
+
+
+
+//upper train main
+    glColor3f(0.3, 0.3, 0.3)  ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(168, 148);
+    glVertex2i (180, 197);
+
+    glVertex2i (180, 197);
+    glVertex2i (192, 148);
+
+    glVertex2i (192, 148);
+    glVertex2i(168, 148);
+
+    glEnd();
+
+
+
+   
+
+  
+
+//low train
+    glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(160, 30);
+    glVertex2i (180, 44);
+
+    glVertex2i (180, 44);
+    glVertex2i (200, 30);
+
+    glVertex2i (200, 30);
+    glVertex2i(160, 30);
+
+    glEnd();
+
+
+
+//low train main
+    glColor3f(0.7, 0.3, 0.2) ;
+    glBegin(GL_POLYGON);
+
+    glVertex2i(162, 30);
+    glVertex2i (180, 42);
+
+    glVertex2i (180, 42);
+    glVertex2i (198, 30);
+
+    glVertex2i (198, 30);
+    glVertex2i(162, 30);
+
+
+    glEnd();
+
+
+
+//Middle line top to bottom
+    glColor3f(1.0, 1.0, 1.0) ;
+    glBegin(GL_LINES);
+
+    glVertex2i (180, 44);
+    glVertex2i (180, 91);
+
+    glVertex2i (180, 197);
+    glVertex2i (180, 350);
+
+    glEnd();
 }
 
 // declare mouse function>
