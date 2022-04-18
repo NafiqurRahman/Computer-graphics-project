@@ -1,10 +1,9 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include <math.h>
-#include<windows.h>
+#include<windows.h>//nafi...
 
 unsigned char viewMode = 'd';
-
 
 //Background skyColor
 GLclampf skyColorRed = 0.133;
